@@ -1,8 +1,10 @@
-#include "clang/ASTMatchers/ASTMatchFinder.h"
+#include <clang/ASTMatchers/ASTMatchFinder.h>
 
-class MyPrinter : public MatchFinder::MatchCallback
+class cMyPrinter :
+    public clang::ast_matchers::MatchFinder::MatchCallback
 {
-public:
-    virtual void run(const MatchFinder::MatchResult);
-    
+	public:
+    	void run(const clang::ast_matchers::MatchFinder::MatchResult&);
+    	//virtual ~cMyPrinter();
+
 };

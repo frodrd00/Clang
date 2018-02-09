@@ -1,36 +1,8 @@
-#include "clang/ASTMatchers/ASTMatchFinder.h"
-//#include "clang/ASTMatchers/ASTMatchers.h"
-//#include "clang/Frontend/FrontendActions.h"
-#include "clang/Tooling/CommonOptionsParser.h"
-#include "clang/Tooling/Tooling.h"
+#include "Myprinter.h"
+#include <clang/Tooling/CommonOptionsParser.h>
+#include <clang/Tooling/Tooling.h>
+#include <llvm/Support/CommandLine.h>
 
-#include "llvm/Support/CommandLine.h"
-
-/*using namespace clang::ast_matchers;*/
-/*using namespace clang::tooling;*/
-/*using namespace clang;*/
-/*using namespace llvm;*/
-
-class MyPrinter :
-    public clang::ast_matchers::MatchFinder::MatchCallback
-{
-public:
-    virtual void run(const clang::ast_matchers::MatchFinder::MatchResult &Result)
-    {
-        clang::ASTContext *Context = Result.Context;
-        if (const clang::CallExpr *E =
-            Result.Nodes.getNodeAs<clang::CallExpr>("functions"))
-        {
-            clang::FullSourceLoc FullLocation = Context->getFullLoc(E->getLocStart());
-            if (FullLocation.isValid())
-            {
-                llvm::outs() << "Found call at "
-                             << FullLocation.getSpellingLineNumber() << ":"
-                             << FullLocation.getSpellingColumnNumber() << "\n";
-            }
-        }
-    }
-};
 
 // Apply a custom category to all command-line options so that they are the
 // only ones displayed.
@@ -50,7 +22,7 @@ int main(int argc, const char **argv)
     clang::tooling::ClangTool Tool(OptionsParser.getCompilations(),
                    OptionsParser.getSourcePathList());
 
-    MyPrinter Printer;
+    cMyPrinter Printer;
     clang::ast_matchers::MatchFinder Finder;
 
     clang::ast_matchers::StatementMatcher functionMatcher =
