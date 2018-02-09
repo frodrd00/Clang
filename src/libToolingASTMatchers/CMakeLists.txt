@@ -13,7 +13,7 @@ set(CMAKE_CXX_FLAGS "-std=c++11 -fno-rtti")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 
 # Build the tool
-add_executable(main main.cpp)
+add_executable(borrardor borrador.cpp)
 
 # Set the clang libraries that we wish to use
 set(clang_libs "clangTooling" "clangFrontend" "clangFrontendTool" "clangDriver"
@@ -28,4 +28,4 @@ llvm_map_components_to_libnames(llvm_libs irreader core support libdriver
                                           codegen)
 
 # Link against clang and LLVM
-target_link_libraries(main ${clang_libs} ${llvm_libs})
+target_link_libraries(borrador ${clang_libs} ${llvm_libs})

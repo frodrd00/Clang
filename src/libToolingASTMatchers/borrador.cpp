@@ -1,4 +1,4 @@
-#include "clang/ASTMatchers/ASTMatchFinder.h"
+/*#include "clang/ASTMatchers/ASTMatchFinder.h"
 #include "clang/ASTMatchers/ASTMatchers.h"
 #include "clang/Frontend/FrontendActions.h"
 #include "clang/Tooling/CommonOptionsParser.h"
@@ -9,7 +9,7 @@
 using namespace clang::ast_matchers;
 using namespace clang::tooling;
 using namespace clang;
-using namespace llvm;
+using namespace llvm;*/
 
 class MyPrinter :
     public MatchFinder::MatchCallback
