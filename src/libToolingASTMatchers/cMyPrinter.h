@@ -5,5 +5,5 @@ class cMyPrinter :
 {
 	public:
     	virtual void run(const clang::ast_matchers::MatchFinder::MatchResult &Result);
-    	virtual ~cMyPrinter(){};
+    	virtual ~cMyPrinter();
 };

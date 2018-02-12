@@ -1,4 +1,5 @@
 #include "cMyPrinter.h"
+#include <iostream>
 
 void cMyPrinter::run(const clang::ast_matchers::MatchFinder::MatchResult &Result)
 {
@@ -18,8 +19,4 @@ void cMyPrinter::run(const clang::ast_matchers::MatchFinder::MatchResult &Result
 
 
 cMyPrinter::~cMyPrinter()
-{
-
-    delete Context;
-    delete E;
-}
+{}
