@@ -1,7 +1,7 @@
 # Clang
 # Introducción a clang-AST
 
-Este proyecto contiene tres ejemplos diferentes sobre cómo utilizar clang: dos con LibTooling y uno con LibClang. En los tres casos el ejemplo imprime cierta información (número de línea y de columna) cada vez que se realiza una llamada a una función denominada "doSomething". Todos los ejemplos se pueden compilar de dos maneras: (1) utilizando CMake o (2) compilando manualmente el ejemplo.
+Este proyecto contiene dos ejemplos diferentes sobre cómo utilizar clang: dos con LibTooling. En los dos casos el ejemplo imprime cierta información (número de línea y de columna) cada vez que se realiza una llamada a una función denominada "doSomething". Todos los ejemplos se pueden compilar de dos maneras: (1) utilizando CMake o (2) compilando manualmente el ejemplo.
 
 ## Contenidos del proyecto
 
