@@ -10,7 +10,9 @@ add_definitions(${LLVM_DEFINITIONS})
 set(CMAKE_CXX_FLAGS "-std=c++11 -fno-rtti")
 
 # Build the tool
-add_executable(main main.cpp)
+set(COMMON_SOURCES cMyPrinter.cpp)
+set(TARGET_SOURCES main.cpp)
+add_executable(main ${COMMON_SOURCES} ${TARGET_SOURCES})
 
 # Set the clang libraries that we wish to use
 set(clang_libs "clangTooling" "clangFrontend" "clangFrontendTool" "clangDriver"

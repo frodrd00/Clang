@@ -1,6 +1,4 @@
-#include "Myprinter.h"
-#include <iostream>
-
+#include "cMyPrinter.h"
 
 void cMyPrinter::run(const clang::ast_matchers::MatchFinder::MatchResult &Result)
 {
@@ -18,9 +16,10 @@ void cMyPrinter::run(const clang::ast_matchers::MatchFinder::MatchResult &Result
     }
 }
 
-/*cMyPrinter::~cMyPrinter()
+
+cMyPrinter::~cMyPrinter()
 {
-    std::cout << "Memoria liberada" << std::endl;
+
     delete Context;
     delete E;
-}*/
+}
