@@ -5,15 +5,15 @@ Este proyecto contiene tres ejemplos diferentes sobre cómo utilizar clang: dos 
 
 ## Contenidos del proyecto
 
-| Fichero                                           | Descripción                                        |
-| --------------------------------------------------| -------------------------------------------------- |
-| ./readme.md                                       | Fichero de ayuda                                   |
-| ./src/libtooling_example_tool_1.cpp               | Ejemplo de LibTooling mediante RecursiveASTVisitor |
-| ./src/libToolingASTMatchers/main.cpp              | Ejemplo de LibTooling mediante ASTMatchers         |
-| ./src/libToolingRecursiveASTVisitor/main.cpp      | Ejemplo de LibClang mediante cursores              |
-| ./src/CMakeLists.txt                | Script para compilar los ejemplos con CMake        |
-| ./input/example.cpp                 | Ejemplo de código fuente para analizar             |
-| ./input/example_2.cpp               | Otro ejemplo de ćodigo fuente para analizar        |
+| Fichero                                                   | Descripción                                        |
+| ----------------------------------------------------------| -------------------------------------------------- |
+| ./readme.md                                               | Fichero de ayuda                                   |
+| ./src/libToolingRecursiveASTVisitor/main.cpp              | Ejemplo de LibTooling mediante RecursiveASTVisitor |
+| ./src/libToolingASTMatchers/main.cpp                      | Ejemplo de LibTooling mediante ASTMatchers         |
+| ./src/libToolingRecursiveASTVisitor/CMakeLists.txt        | Script para compilar los ejemplos con CMake        |
+| ./src/libToolingASTMatchers/CMakeLists.txt                | Script para compilar los ejemplos con CMake        |
+| ./input/example.cpp                                       | Ejemplo de código fuente para analizar             |
+| ./input/example_2.cpp                                     | Otro ejemplo de ćodigo fuente para analizar        |
 
 ## Compilación
 
@@ -23,6 +23,7 @@ En el caso de usar CMake es necesario modificar el fichero *CMakeLists.txt* para
 
 ```
 export CXX=/usr/local/bin/clang++
+cd src/libToolingASTMatchers/
 mkdir -p build
 cd build
 cmake ..
