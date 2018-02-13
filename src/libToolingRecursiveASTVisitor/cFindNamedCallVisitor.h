@@ -1,0 +1,17 @@
+#include <clang/AST/AST.h>
+#include <clang/AST/RecursiveASTVisitor.h>
+#include <clang/AST/ASTContext.h>
+
+class cFindNamedCallVisitor :
+    public clang::RecursiveASTVisitor<cFindNamedCallVisitor>
+{
+public:
+    explicit cFindNamedCallVisitor(clang::ASTContext *Context, std::string fName) :
+        Context(Context), fName(fName){};                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+
+    bool VisitCallExpr(clang::CallExpr *CallExpression);
+
+private:
+    clang::ASTContext *Context;
+    std::string fName;
+};

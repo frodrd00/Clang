@@ -1,6 +1,12 @@
 # Clang
 # Introducción a clang-AST
 
+RIASC Universidad de León.
+Camino Fernández Llamas.
+Gonzalo Esteban Costales.
+Flavio Rodrigues Dias.
+Razvan Raducu. 
+
 Este proyecto contiene dos ejemplos diferentes sobre cómo utilizar clang: dos con LibTooling. En los dos casos el ejemplo imprime cierta información (número de línea y de columna) cada vez que se realiza una llamada a una función denominada "doSomething". Todos los ejemplos se pueden compilar de dos maneras: (1) utilizando CMake o (2) compilando manualmente el ejemplo.
 
 ## Contenidos del proyecto
