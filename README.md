@@ -57,7 +57,7 @@ clang++ nombre_fichero_ejemplo.cpp -std=c++11 -g \
 
 ### Ejecución
 
-src/libToolingASTMatchers/example1 
+src/libToolingASTMatchers/example1  
 src/libToolingRecursiveASTVisitor/example1
 ```
 ../bin/nombre_fichero_ejemplo ../../../../input/example_2.cpp
