@@ -1,58 +1,8 @@
 ##C++##
 
-# Prerequisites
-*.d
-
 # Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+bin
 
 ##Cmake##
 
-CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
-cmake_install.cmake
-install_manifest.txt
-compile_commands.json
-CTestTestfile.cmake
-
-#ignore build and bin files
-
-
-src/libToolingRecursiveASTVisitor/example1/bin/*
-src/libToolingRecursiveASTVisitor/example1/build/*
-src/libToolingRecursiveASTVisitor/example2/bin/*
-src/libToolingRecursiveASTVisitor/example2/build/*
-src/libToolingASTMatchers/example1/bin/*
-src/libToolingASTMatchers/example1/build/*
-src/libToolingASTMatchers/example2/bin/*
-src/libToolingASTMatchers/example2/build/*
+build
