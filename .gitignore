@@ -47,7 +47,14 @@ CTestTestfile.cmake
 
 #ignore build and bin files
 
-src/libToolingASTMatchers/build/*
-src/libToolingASTMatchers/bin/*
-src/libToolingRecursiveASTVisitor/build/*
-src/libToolingRecursiveASTVisitor/bin/*
+*/bin/*
+*/build/*
+
+#src/libToolingASTMatchers/example1/build/*
+#src/libToolingASTMatchers/example1/bin/*
+#src/libToolingASTMatchers/example2/build/*
+#src/libToolingASTMatchers/example2/bin/*
+#src/libToolingRecursiveASTVisitor/example1/build/*
+#src/libToolingRecursiveASTVisitor/example1/bin/*
+#src/libToolingRecursiveASTVisitor/example2/build/*
+#src/libToolingRecursiveASTVisitor/example2/bin/*
