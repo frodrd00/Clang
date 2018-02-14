@@ -1,14 +1,17 @@
 # Clang
 # Introducción a clang-AST
 
-RIASC Universidad de León.
+## IASC Universidad de León.
+Flavio Rodrigues Dias.
 Camino Fernández Llamas.
 Gonzalo Esteban Costales.
-Flavio Rodrigues Dias.
 Razvan Raducu. 
 
 Este proyecto contiene dos ejemplos diferentes sobre cómo utilizar clang: dos con LibTooling. En los dos casos el ejemplo imprime cierta información (número de línea y de columna) cada vez que se realiza una llamada a una función denominada "doSomething". Todos los ejemplos se pueden compilar de dos maneras: (1) utilizando CMake o (2) compilando manualmente el ejemplo.
 
+## Tutorial: libToolingRecursiveASTVisitor/example2 
+
+http://clang.llvm.org/docs/RAVFrontendAction.html
 
 ## Compilación
 
@@ -54,8 +57,15 @@ clang++ nombre_fichero_ejemplo.cpp -std=c++11 -g \
 
 ### Ejecución
 
-En todos los casos la ejecución es similar:
-
+src/libToolingASTMatchers/example1 
+src/libToolingRecursiveASTVisitor/example1
 ```
 ../bin/nombre_fichero_ejemplo ../../../../input/example_2.cpp
+
+```
+src/libToolingRecursiveASTVisitor/example2
+
+```
+../bin/nombre_fichero_ejemplo "namespace n { namespace m { class C {}; } }"
+
 ```
