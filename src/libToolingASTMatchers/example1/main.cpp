@@ -1,7 +1,7 @@
 #include <clang/Tooling/CommonOptionsParser.h>
 #include <clang/Tooling/Tooling.h>
 #include <llvm/Support/CommandLine.h>
-#include "cMyPrinter.h"
+#include "MyPrinter.h"
 
 
 // Apply a custom category to all command-line options so that they are the

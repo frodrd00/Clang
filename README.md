@@ -9,17 +9,6 @@ Razvan Raducu.
 
 Este proyecto contiene dos ejemplos diferentes sobre cómo utilizar clang: dos con LibTooling. En los dos casos el ejemplo imprime cierta información (número de línea y de columna) cada vez que se realiza una llamada a una función denominada "doSomething". Todos los ejemplos se pueden compilar de dos maneras: (1) utilizando CMake o (2) compilando manualmente el ejemplo.
 
-## Contenidos del proyecto
-
-| Fichero                                                   | Descripción                                        |
-| ----------------------------------------------------------| -------------------------------------------------- |
-| ./readme.md                                               | Fichero de ayuda                                   |
-| ./src/libToolingRecursiveASTVisitor/main.cpp              | Ejemplo de LibTooling mediante RecursiveASTVisitor |
-| ./src/libToolingASTMatchers/main.cpp                      | Ejemplo de LibTooling mediante ASTMatchers         |
-| ./src/libToolingRecursiveASTVisitor/CMakeLists.txt        | Script para compilar los ejemplos con CMake        |
-| ./src/libToolingASTMatchers/CMakeLists.txt                | Script para compilar los ejemplos con CMake        |
-| ./input/example.cpp                                       | Ejemplo de código fuente para analizar             |
-| ./input/example_2.cpp                                     | Otro ejemplo de ćodigo fuente para analizar        |
 
 ## Compilación
 
@@ -29,7 +18,7 @@ En el caso de usar CMake es necesario modificar el fichero *CMakeLists.txt* para
 
 ```
 export CXX=/usr/local/bin/clang++
-cd src/libToolingASTMatchers/
+cd src/libToolingASTMatchers/example1
 mkdir -p build
 cd build
 cmake ..
@@ -68,5 +57,5 @@ clang++ nombre_fichero_ejemplo.cpp -std=c++11 -g \
 En todos los casos la ejecución es similar:
 
 ```
-./bin/nombre_fichero_ejemplo ../input/example_2.cpp
+../bin/nombre_fichero_ejemplo ../../../../input/example_2.cpp
 ```

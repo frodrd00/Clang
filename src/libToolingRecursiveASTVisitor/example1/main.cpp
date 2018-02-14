@@ -1,5 +1,5 @@
-#include "cFindNamedCallConsumer.h"
-#include "cFindNamedCallAction.h"
+#include "FindNamedCallConsumer.h"
+#include "FindNamedCallAction.h"
 #include <clang/Tooling/Tooling.h>
 #include <clang/Tooling/CommonOptionsParser.h>
 

@@ -1,5 +1,5 @@
-#include "cFindNamedCallAction.h"
-#include "cFindNamedCallConsumer.h"
+#include "FindNamedCallAction.h"
+#include "FindNamedCallConsumer.h"
 
 std::unique_ptr<clang::ASTConsumer> cFindNamedCallAction::CreateASTConsumer(
     clang::CompilerInstance &Compiler, llvm::StringRef InFile)

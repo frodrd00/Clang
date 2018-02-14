@@ -1,4 +1,4 @@
-#include "cFindNamedCallVisitor.h"
+#include "FindNamedCallVisitor.h"
 
 bool cFindNamedCallVisitor::VisitCallExpr(clang::CallExpr *CallExpression)
 {

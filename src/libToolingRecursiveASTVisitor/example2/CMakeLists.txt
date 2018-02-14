@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.4.3)
-project(libToolingASTMatchers)
+project(RAVFrontendAction)
 
 # LLVM dependency
 find_package(LLVM REQUIRED CONFIG)
@@ -9,10 +9,11 @@ add_definitions(${LLVM_DEFINITIONS})
 # Project compile flags
 set(CMAKE_CXX_FLAGS "-std=c++11 -fno-rtti")
 
+# Project output
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+
 # Build the tool
-set(COMMON_SOURCES cMyPrinter.cpp)
-set(TARGET_SOURCES main.cpp)
-add_executable(main ${COMMON_SOURCES} ${TARGET_SOURCES})
+add_executable(main main.cpp)
 
 # Set the clang libraries that we wish to use
 set(clang_libs "clangTooling" "clangFrontend" "clangFrontendTool" "clangDriver"
