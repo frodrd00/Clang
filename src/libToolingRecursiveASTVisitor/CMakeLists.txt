@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.4.3)
-project(libtooling_libclang_examples)
+project(libToolingRecursiveASTVisitor)
 
 # LLVM dependency
 find_package(LLVM REQUIRED CONFIG)
