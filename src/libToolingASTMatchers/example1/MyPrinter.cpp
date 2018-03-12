@@ -1,5 +1,4 @@
 #include "MyPrinter.h"
-#include <iostream>
 
 void cMyPrinter::run(const clang::ast_matchers::MatchFinder::MatchResult &Result)
 {
