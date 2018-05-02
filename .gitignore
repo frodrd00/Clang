@@ -1,8 +1,14 @@
 ##C++##
 
 # Compiled Object files
-bin
+bin/
 
 ##Cmake##
 
-build
+build/
+
+##Eclipse
+
+.settings/
+.cproject
+.project
