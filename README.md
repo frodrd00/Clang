@@ -1,7 +1,7 @@
 # Clang
 # Introducción a clang-AST
 
-## IASC Universidad de León.
+## RIASC Universidad de León.
 Flavio Rodrigues Dias.
 Camino Fernández Llamas.
 Gonzalo Esteban Costales.
