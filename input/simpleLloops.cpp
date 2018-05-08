@@ -4,7 +4,7 @@ int main () {
 
    }
 
-   for( int b = 0; b < 10; b++) {
+   for( int b = 1; b < 20; b++) {
 
    }
 

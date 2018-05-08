@@ -1,4 +1,5 @@
 #include <clang/AST/ASTConsumer.h>
+//#include <clang/AST/ASTContext.h>
 #include "FindNamedClassVisitor.h"
 
 /**
@@ -10,7 +11,10 @@
 class cFindNamedClassConsumer : public clang::ASTConsumer {
 
 	public:
-	  virtual void HandleTranslationUnit(clang::ASTContext &Context);
+	 explicit cFindNamedClassConsumer(clang::ASTContext *Context)
+	    : Visitor(Context) {}
+
+		virtual void HandleTranslationUnit(clang::ASTContext &Context);
 
 	private:
 	  // A RecursiveASTVisitor implementation.

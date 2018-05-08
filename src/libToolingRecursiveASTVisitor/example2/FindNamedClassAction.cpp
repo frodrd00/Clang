@@ -3,7 +3,7 @@
 #include "FindNamedClassConsumer.h"
 
 
-std::unique_ptr<clang::ASTConsumer> CreateASTConsumer(
+std::unique_ptr<clang::ASTConsumer> cFindNamedClassAction::CreateASTConsumer(
     clang::CompilerInstance &Compiler, llvm::StringRef InFile)
 {
 	 return std::unique_ptr<clang::ASTConsumer>(

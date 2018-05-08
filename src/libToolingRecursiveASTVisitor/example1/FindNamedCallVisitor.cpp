@@ -13,6 +13,9 @@ bool cFindNamedCallVisitor::VisitCallExpr(clang::CallExpr *CallExpression)
         {
             clang::FullSourceLoc FullLocation =
                 Context->getFullLoc(CallExpression->getLocStart());
+
+            const auto&  parents = Context->getParents(*func);
+
             if (FullLocation.isValid())
                 llvm::outs() << "Found call at "
                      << FullLocation.getSpellingLineNumber() << ":"

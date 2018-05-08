@@ -13,16 +13,7 @@ class cFindNamedClassVisitor
 	public:
 	  explicit cFindNamedClassVisitor(clang::ASTContext *Context) : Context(Context) {}
 
-	  bool VisitCXXRecordDecl(clang::CXXRecordDecl *Declaration) {
-		if (Declaration->getQualifiedNameAsString() == "n::m::C") {
-		  clang::FullSourceLoc FullLocation = Context->getFullLoc(Declaration->getLocStart());
-		  if (FullLocation.isValid())
-			llvm::outs() << "Found declaration at "
-						 << FullLocation.getSpellingLineNumber() << ":"
-						 << FullLocation.getSpellingColumnNumber() << "\n";
-		}
-		return true;
-	  }
+	  bool VisitCXXRecordDecl(clang::CXXRecordDecl *Declaration);
 
 	private:
 	 clang::ASTContext *Context;

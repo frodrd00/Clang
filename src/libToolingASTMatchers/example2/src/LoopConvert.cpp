@@ -37,7 +37,8 @@ StatementMatcher loopMatcher =
 				  hasRHS(integerLiteral(equals(20))))),
 			hasLoopInit(
 					declStmt(hasSingleDecl(varDecl(hasInitializer(
-							integerLiteral(equals(0)))))))).bind("forLoop");
+							integerLiteral(equals(0)))))))
+			 ).bind("forLoop");
 
 //que hacer si se ha encontrado el match
 class LoopPrinter : public MatchFinder::MatchCallback {

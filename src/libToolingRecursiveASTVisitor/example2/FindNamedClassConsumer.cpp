@@ -1,4 +1,4 @@
-#include <FindNamedClassConsumer.h>
+#include "FindNamedClassConsumer.h"
 
 void cFindNamedClassConsumer::HandleTranslationUnit(clang::ASTContext &Context)
 {
